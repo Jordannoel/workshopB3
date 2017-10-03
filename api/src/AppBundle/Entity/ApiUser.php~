@@ -6,10 +6,10 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * ApiUserRepository
+ * UtilisateurApiRepository
  *
  * @ORM\Table(name="api_user")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ApiUserRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\UtilisateurApiRepository")
  */
 class ApiUser implements UserInterface
 {

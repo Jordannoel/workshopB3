@@ -13,12 +13,12 @@ services:
     auth_token_repository:
         class:   Doctrine\ORM\EntityManager
         factory: ["@doctrine.orm.entity_manager", "getRepository"]
-        arguments: ["AppBundle:UtilisateurToken"]
+        arguments: ["AppBundle:UserKey"]
 
     user_repository:
         class:   Doctrine\ORM\EntityManager
         factory: ["@doctrine.orm.entity_manager", "getRepository"]
-        arguments: ["AppBundle:UtilisateurApi"]
+        arguments: ["AppBundle:ApiUser"]
 
     auth_token_authenticator:
         class:     AppBundle\Security\AuthTokenAuthenticator

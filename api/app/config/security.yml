@@ -22,7 +22,7 @@ security:
             anonymous: ~
 
     encoders:
-        AppBundle\Entity\UtilisateurApi:
+        AppBundle\Entity\ApiUser:
             algorithm: bcrypt
             cost: 12
 

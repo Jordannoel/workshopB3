@@ -1,0 +1,30 @@
+AppBundle\Entity\ApiUser:
+    attributes:
+        id:
+            groups: ['userApi', 'auth-token']
+        userClientId:
+            groups: ['userApi', 'auth-token']
+
+AppBundle\Entity\UserKey:
+    attributes:
+        id:
+            groups: ['auth-token']
+        value:
+            groups: ['auth-token']
+        createdAt:
+            groups: ['auth-token']
+        apiUser:
+            groups: ['auth-token']
+
+AppBundle:Entity\Commercials:
+    attributes:
+        id:
+            groups: ["commercials"]
+        firstName:
+            groups: ["commercials"]
+        lastName:
+            groups: ["commercials"]
+        emailAdress:
+            groups: ["commercials"]
+        phoneNumber:
+            groups: ["commercials"]

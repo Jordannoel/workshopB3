@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * UserKey
  *
  * @ORM\Table(name="user_token")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\UserKeyRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\UtilisateurTokenRepository")
  */
 class UserKey
 {
@@ -100,7 +100,7 @@ class UserKey
     }
 
     /**
-     * Set ApiUserRepository
+     * Set UtilisateurApiRepository
      *
      * @param ApiUser $apiUser
      *
@@ -114,7 +114,7 @@ class UserKey
     }
 
     /**
-     * Get ApiUserRepository
+     * Get UtilisateurApiRepository
      *
      * @return ApiUser
      */
@@ -124,3 +124,4 @@ class UserKey
     }
 
 }
+

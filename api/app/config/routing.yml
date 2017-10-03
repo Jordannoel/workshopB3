@@ -10,3 +10,7 @@ auth-tokens:
     type:     rest
     resource: AppBundle\Controller\UserKeyController
 
+commercials:
+    type:     rest
+    resource: AppBundle\Controller\CommercialsController
+

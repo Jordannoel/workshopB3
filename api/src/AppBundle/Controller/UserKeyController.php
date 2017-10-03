@@ -2,8 +2,8 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\UtilisateurToken;
 use AppBundle\Entity\Credentials;
+use AppBundle\Entity\UserKey;
 use AppBundle\Form\CredentialsType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -40,7 +40,7 @@ class UserKeyController extends Controller
 
         $em = $this->get('doctrine.orm.entity_manager');
 
-        $user = $em->getRepository('AppBundle:UtilisateurApi')
+        $user = $em->getRepository('AppBundle:ApiUser')
             ->findOneBy(array('userClientId' => $credentials->getLogin()));
 
         if (!$user) { // L'utilisateur n'existe pas
@@ -55,7 +55,7 @@ class UserKeyController extends Controller
             return $this->invalidCredentials();
         }
 
-        $authToken = new UtilisateurToken();
+        $authToken = new UserKey();
         $authToken->setValue(base64_encode(random_bytes(20)));
         $now = new \DateTime('now');
         $authToken->setCreatedAt($now);

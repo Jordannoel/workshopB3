@@ -2,8 +2,8 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Coordonnee;
-use AppBundle\Entity\UtilisateurApi;
+
+use AppBundle\Entity\ApiUser;
 use AppBundle\Form\ApiUserType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -51,14 +51,14 @@ class ApiUserController extends Controller
      */
     public function postApiUserAction(Request $request)
     {
-        $user = new UtilisateurApi();
+        $user = new ApiUser();
         $form = $this->createForm(ApiUserType::class, $user);
 
         $em = $this->get('doctrine.orm.entity_manager');
 
         $form->submit($request->request->all());
 
-        $user_existing = $this->getDoctrine()->getRepository('AppBundle:UtilisateurApi')->findBy(array("userClientId" => $request->get("userClientId")));
+        $user_existing = $this->getDoctrine()->getRepository('AppBundle:ApiUser')->findBy(array("userClientId" => $request->get("userClientId")));
         if (!empty($user_existing)){
             throw new BadRequestHttpException("BadRequest : Cet identifiant client existe déja");
         }
@@ -67,23 +67,7 @@ class ApiUserController extends Controller
             // le mot de passe en clair est encodé avant la sauvegarde
             $encoded = $encoder->encodePassword($user, $user->getUserPlainPassword());
             $user->setUserPassword($encoded);
-            $user->setNomSociete($request->get("nomSociete"));
 
-            $coordonnees = new Coordonnee();
-            $coordonnees->setAdresseLigne1($request->get("adresseL1"));
-            if (empty($request->get("adresseL2")) || $request->get("adresseL2") == "null")
-                $adresse2 = null;
-            else
-                $adresse2 = $request->get("adresseL2");
-            $coordonnees->setAdresseLigne2($adresse2);
-            $coordonnees->setCodePostal($request->get("codePostal"));
-            $coordonnees->setVille($request->get("ville"));
-            $coordonnees->setMail($request->get("mail"));
-            $coordonnees->setTelephone($request->get("telephone"));
-            $em->persist($coordonnees);
-            $em->flush();
-            $user->setIsAdmin(false);
-            $user->setCoordonnee($coordonnees);
 
             $em->persist($user);
             $em->flush();
