@@ -9,7 +9,9 @@
 <body>
 <?php
 include "conf.php";
-var_dump($apiHandler->RequirementsAction->GetAll());
+//Recupérer les fiches besoin
+//$apiHandler->RequirementsAction->GetAll();
+
 if (isset($_GET["error"])) {
     $error = htmlspecialchars($_GET["error"]);
     ?>
