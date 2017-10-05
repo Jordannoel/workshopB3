@@ -1,18 +1,66 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <title>Snap-it</title>
-</head>
-<body>
 <?php
 include "conf.php";
 //Recupérer les fiches besoin
-//$apiHandler->RequirementsAction->GetAll();
+//$apiHandler->RequirementsAction->GetAll(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-if (isset($_GET["error"])) {
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <style>
+        h1 {
+            color: #ef9445;
+        }
+        h4{
+            color: #ff8a28;
+        }
+        h5{
+            color: #ff8a28;
+        }
+        .btn-zone {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #2f3649">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><h4>GFI</h4></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><h5>About</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html"><h5>Services</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><h5>Contact</h5></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<?php
+if (isset($_GET["error"]) && !empty($_GET["error"])) {
     $error = htmlspecialchars($_GET["error"]);
     ?>
     <div style="display: block;" class="modal" id="modalError">
@@ -39,11 +87,32 @@ if (isset($_GET["error"])) {
     <?php
 }
 ?>
-<div class="container">
-    <form method="post" action="connect.php">
-        <input type="email" name="email" id="email" autofocus required/>
-        <input type="password" name="password" id="password" required/>
-        <input type="submit" value="Se connecter" />
-    </form>
+<div class="container-fluid">
+    <h1 style="margin: 40px 0; text-align:center;">Snap - AT</h1>
+    <div class="container" style="margin: 40px auto;">
+        <form method="post" action="connect.php">
+            <input type="email" class="form-control" name="email" placeholder="E-mail adress (...@gfi.fr)" id="email" autofocus required/>
+            <input type="password" class="form-control" name="password" placeholder="Your password" id="password" required/>
+            <button class="btn btn-primary btn-grand btn-zone" type="submit">Connect to Snap-AT</button>
+        </form>
+    </div>
 </div>
+
+<!-- Footer -->
+<footer class="py-5 ">
+    <div class="container">
+        <p class="m-0 text-center">Copyright &copy; - GFI Informatique - 2017</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
 </body>

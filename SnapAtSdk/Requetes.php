@@ -43,8 +43,8 @@ class Requetes
 
         $array_user_json = json_decode($result);
         if (FALSE === $result  || ($httpCode != 201 && $httpCode != 200) || isset($array_user_json->message)){
-            if (isset($array_user_json->message))
-                $message = $array_user_json->message;
+            if (isset($array_user_json->error))
+                $message = $array_user_json->error;
             else
                 $message = "Erreur de réponse HTTP";
             throw new ReponseException($message, $httpCode);
@@ -66,8 +66,8 @@ class Requetes
 
         $array_user_json = json_decode($result);
         if (FALSE === $result  || ($httpCode != 200 && $httpCode != 201) || isset($array_user_json->message)){
-            if (isset($array_user_json->message))
-                $message = $array_user_json->message;
+            if (isset($array_user_json->error))
+                $message = $array_user_json->error;
             else
                 $message = "Erreur de réponse HTTP";
             throw new ReponseException($message, $httpCode);
@@ -90,8 +90,8 @@ class Requetes
 
         $array_user_json = json_decode($result);
         if (FALSE === $result  || ($httpCode != 200 && $httpCode != 201 && $httpCode != 204) || isset($array_user_json->message)){
-            if (isset($array_user_json->message))
-                $message = $array_user_json->message;
+            if (isset($array_user_json->error))
+                $message = $array_user_json->error;
             else
                 $message = "Erreur de réponse HTTP";
             throw new ReponseException($message, $httpCode);

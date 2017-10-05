@@ -1,10 +1,10 @@
 # This file is auto-generated during the composer install
 parameters:
-    database_host: db695868253.db.1and1.com
+    database_host: localhost
     database_port: 3306
-    database_name: db695868253
-    database_user: dbo695868253
-    database_password: Matemaker33!
+    database_name: id3126091_snapat
+    database_user: id3126091_snapat
+    database_password: snap-at33
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null

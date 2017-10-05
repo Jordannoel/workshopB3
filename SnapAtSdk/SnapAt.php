@@ -24,7 +24,7 @@ class SnapAt extends Requetes
     const MODE_TEST = false;
     const MODE_LOCAL = null;
 
-    const URL_PROD = "http://localhost/workshopb3/api/web/app_dev.php";
+    const URL_PROD = "https://snap-at.000webhostapp.com/api";
     const URL_TEST = "http://localhost/workshopb3/api/web/app_dev.php";
     const URL_LOCAL = "http://localhost/workshopb3/api/web/app_dev.php";
 

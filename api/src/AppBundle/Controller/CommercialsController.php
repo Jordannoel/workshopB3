@@ -24,12 +24,12 @@ class CommercialsController extends Controller
         $mail = $request->get("email_adress");
         $password = $request->get("password");
         $user = $this->getDoctrine()->getRepository("AppBundle:Commercials")->findOneBy(array("emailAdress" => $mail));
-        if (!$user || empty($user))
-            return Globals::errIncorrectPassword("Ces identifiants ne sont pas valide");
+        if (empty($user))
+            return Globals::errIncorrectPassword("Cette adresse mail n'existe pas");
         if (password_verify($password, $user->getPassword()))
             return $user;
         else
-            return Globals::errIncorrectPassword("Ces identifiants ne sont pas valide");
+            return Globals::errIncorrectPassword("Ces identifiants ne sont pas valides");
     }
 
 }
