@@ -165,7 +165,7 @@ class Requirements
      */
     public function getPostDate()
     {
-        return $this->postDate;
+        return $this->postDate->format("Y-m-d H:i:s");
     }
 
     /**
@@ -189,7 +189,7 @@ class Requirements
      */
     public function getStartDate()
     {
-        return $this->startDate;
+        return $this->startDate->format("Y-m-d H:i:s");
     }
 
     /**

@@ -137,4 +137,18 @@ class RequirementsController extends Controller
 
     }
 
+    /**
+     * @Rest\View()
+     * @Rest\Delete("/requirements/{id}")
+     */
+    public function deleteRequirementsAction(Request $request)
+    {
+        $em = $this->get('doctrine.orm.entity_manager');
+        $requirement = $em->getRepository("AppBundle:Requirements")->find($request->get("id"));
+        if ($requirement) {
+            $em->remove($requirement);
+            $em->flush();
+        }
+    }
+
 }
