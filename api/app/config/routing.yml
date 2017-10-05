@@ -14,3 +14,15 @@ commercials:
     type:     rest
     resource: AppBundle\Controller\CommercialsController
 
+requirements:
+    type:     rest
+    resource: AppBundle\Controller\RequirementsController
+
+customers:
+    type:     rest
+    resource: AppBundle\Controller\CustomersController
+
+status:
+    type:     rest
+    resource: AppBundle\Controller\StatusController
+

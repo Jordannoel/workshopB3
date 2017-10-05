@@ -13,7 +13,10 @@ class Commercials implements ClasseMetierInterface
 
     public function serializeProperties()
     {
-        // TODO: Implement serializeProperties() method.
+        return array(
+            "email_adress" => $this->emailAdress,
+            "password" => $this->password
+        );
     }
 
     public function iterateProperties()
