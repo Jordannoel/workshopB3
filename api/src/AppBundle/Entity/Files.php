@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * KeySucessFactors
+ * Files
  *
- * @ORM\Table(name="key_sucess_factors")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\KeySucessFactorsRepository")
+ * @ORM\Table(name="files")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\FilesRepository")
  */
-class KeySucessFactors
+class Files
 {
     /**
      * @var int
@@ -24,9 +24,9 @@ class KeySucessFactors
     /**
      * @var string
      *
-     * @ORM\Column(name="text", type="text")
+     * @ORM\Column(name="url", type="string", length=255)
      */
-    private $text;
+    private $url;
 
 
     /**
@@ -40,27 +40,27 @@ class KeySucessFactors
     }
 
     /**
-     * Set text
+     * Set url
      *
-     * @param string $text
+     * @param string $url
      *
-     * @return KeySucessFactors
+     * @return Files
      */
-    public function setText($text)
+    public function setUrl($url)
     {
-        $this->text = $text;
+        $this->url = $url;
 
         return $this;
     }
 
     /**
-     * Get text
+     * Get url
      *
      * @return string
      */
-    public function getText()
+    public function getUrl()
     {
-        return $this->text;
+        return $this->url;
     }
 }
 

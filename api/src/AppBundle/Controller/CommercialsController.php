@@ -16,8 +16,8 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 class CommercialsController extends Controller
 {
     /**
-     * @Rest\View()
-     * @Rest\Post("/connexion")
+     * @Rest\View(serializerGroups={"commercials"})
+     * @Rest\Post("/connection")
      */
     public function connectAction(Request $request)
     {

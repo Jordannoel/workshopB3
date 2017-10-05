@@ -78,3 +78,19 @@ update_reservation:
 connect:
     path:     /connect
     defaults: { _controller: AppBundle:Commercials:connect }
+
+get_requirements:
+    path:     /getRequirements
+    defaults: { _controller: AppBundle:Requirements:getRequirements }
+
+post_requirements:
+    path:     /postRequirements
+    defaults: { _controller: AppBundle:Requirements:postRequirements }
+
+get_clients:
+    path:     /getClients
+    defaults: { _controller: AppBundle:Clients:getClients }
+
+get_status:
+    path:     /getStatus
+    defaults: { _controller: AppBundle:Status:getStatus }
