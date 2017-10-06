@@ -60,7 +60,7 @@ include "conf.php";
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #2f3649">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><h4>GFI</h4></a>
+        <a class="navbar-brand" href="index.php"><h4>GFI</h4></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,12 +73,11 @@ include "conf.php";
                     <a class="nav-link" href="form.php"><h5><span class="glyphicon glyphicon-plus-sign"></span> Add Requirement sheet</h5></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><h5><span class="glyphicon glyphicon-edit"></span> Contact</h5></a>
+                    <a class="nav-link" href="http://www.gfi.world/fr/"><h5><span class="glyphicon glyphicon-edit"></span> Contact</h5></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="disconnect.php"><h5><span class="glyphicon glyphicon-ban-circle"></span> Disconnect</h5></a>
                 </li>
-
             </ul>
         </div>
     </div>
@@ -116,7 +115,7 @@ if (isset($_GET["error"]) && !empty($_GET["error"])) {
 
     <form method="post" action="recupererDonnees.php" enctype="multipart/form-data">
         <input type='text' name='title' class="form-control" placeholder="Title"/>
-        <input type='date' name='date' class="form-control" placeholder="Start at least"/>
+        <input type="text" onfocus="(this.type='date')" name='date' class="form-control" placeholder="Start at least"/>
         <input type='text' name='client' id="client-input" class="form-control" placeholder="Client"/>
         <input type='text' name='contactName' class="form-control" placeholder="Contact Name"/>
         <textarea name='description' class="form-control" placeholder="Full Description"></textarea>

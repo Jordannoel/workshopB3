@@ -1,5 +1,7 @@
 <?php
 include "conf.php";
+if (isset($_SESSION["commercial"]))
+    header("Location: list.php");
 //Recupérer les fiches besoin
 //$apiHandler->RequirementsAction->GetAll(); ?>
 <!DOCTYPE html>
@@ -39,20 +41,17 @@ include "conf.php";
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #2f3649">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><h4>GFI</h4></a>
+        <a class="navbar-brand" href="index.php"><h4>GFI</h4></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html"><h5>About</h5></a>
+                    <a class="nav-link" href="http://www.gfi.world/fr/"><h5>About</h5></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html"><h5>Services</h5></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><h5>Contact</h5></a>
+                    <a class="nav-link" href="http://www.gfi.world/fr/"><h5>Contact</h5></a>
                 </li>
 
             </ul>

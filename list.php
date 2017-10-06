@@ -72,7 +72,7 @@ function labelizeStatus($status){
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #2f3649">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><h4>GFI</h4></a>
+        <a class="navbar-brand" href="index.php"><h4>GFI</h4></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -85,10 +85,10 @@ function labelizeStatus($status){
                     <a class="nav-link" href="form.php"><h5><span class="glyphicon glyphicon-plus-sign"></span> Add Requirement sheet</h5></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><h5><span class="glyphicon glyphicon-edit"></span> Contact</h5></a>
+                    <a class="nav-link" href="http://www.gfi.world/fr/"><h5><span class="glyphicon glyphicon-edit"></span> Contact</h5></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><h5><span class="glyphicon glyphicon-ban-circle"></span> Disconnect</h5></a>
+                    <a class="nav-link" href="disconnect.php"><h5><span class="glyphicon glyphicon-ban-circle"></span> Disconnect</h5></a>
                 </li>
 
             </ul>

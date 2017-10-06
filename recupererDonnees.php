@@ -1,11 +1,7 @@
-
-
 <?php
-
+include "conf.php";
 use SnapAtSdk\ClassesMetiers\Requirements;
 use SnapAtSdk\ClassesMetiers\Status;
-
-	include "conf.php";
 
 	if(isset($_POST['date']) && isset($_POST['client']) && isset($_POST['contactName']) && isset($_POST['title']) && isset($_POST['description']) && isset($_POST['successFactor1']) && isset($_POST['nbOfMonth']) && isset($_POST['dayByWeek']) && isset($_POST['location']) && isset($_POST['rate']) && isset($_POST['consultant1']) && isset($_POST['status'])){
 
@@ -26,7 +22,7 @@ use SnapAtSdk\ClassesMetiers\Status;
             $keySuccessFactor2->setText($successFactor2);
             $requirements->addKeySuccessFactorsList($keySuccessFactor2);
 		}
-		if(isset($_POST['successFactor2'])){
+		if(isset($_POST['successFactor3'])){
 			$successFactor3 = htmlspecialchars($_POST['successFactor3']);
             $keySuccessFactor3 = new \SnapAtSdk\ClassesMetiers\KeySuccessFactors();
             $keySuccessFactor3->setText($successFactor3);
