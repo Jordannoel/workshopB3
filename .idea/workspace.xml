@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1c7008-7b66-45b0-baea-e4c1462e8610" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/delete_requirement.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SnapAtSdk/CustomersAction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/disconnect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Requirements.php" afterPath="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Requirements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SnapAtSdk/Requetes.php" afterPath="$PROJECT_DIR$/SnapAtSdk/Requetes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SnapAtSdk/RequirementsAction.php" afterPath="$PROJECT_DIR$/SnapAtSdk/RequirementsAction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/AppBundle/Controller/RequirementsController.php" afterPath="$PROJECT_DIR$/api/src/AppBundle/Controller/RequirementsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/AppBundle/Entity/Requirements.php" afterPath="$PROJECT_DIR$/api/src/AppBundle/Entity/Requirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/modern-business.css" afterPath="$PROJECT_DIR$/css/modern-business.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SnapAtSdk/Routes.php" afterPath="$PROJECT_DIR$/SnapAtSdk/Routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SnapAtSdk/SnapAt.php" afterPath="$PROJECT_DIR$/SnapAtSdk/SnapAt.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form.php" afterPath="$PROJECT_DIR$/form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/list.php" afterPath="$PROJECT_DIR$/list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recupererDonnees.php" afterPath="$PROJECT_DIR$/recupererDonnees.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,68 +24,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="88" column="2" lean-forward="true" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2354#2361#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="list.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="167" column="38" lean-forward="false" selection-start-line="167" selection-start-column="38" selection-end-line="167" selection-end-column="38" />
+            <state relative-caret-position="386">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1507213956051" expanded="true" signature="1959:1984" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="1985:3330" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="2013:3323" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="2296:2368" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="2437:3312" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="2481:3297" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="2519:2690" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="2931:3081" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="3361:5365" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="3378:3412" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="4244:5358" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="4437:5315" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="4481:5292" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="5405:5561" ph="..." />
-                <marker date="1507213956051" expanded="true" signature="5433:5526" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connect.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/connect.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete_requirement.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delete_requirement.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-              <folding>
-                <element signature="e#6#94#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,76 +40,104 @@
       <file leaf-file-name="RequirementsAction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SnapAtSdk/RequirementsAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequirementsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/AppBundle/Controller/RequirementsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="140" column="19" lean-forward="true" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+            <state relative-caret-position="490">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
               <folding>
-                <element signature="e#40#73#0#PHP" expanded="true" />
-                <element signature="e#1202#5327#0#PHP" expanded="false" />
+                <element signature="e#119#170#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="100" column="90" lean-forward="false" selection-start-line="100" selection-start-column="90" selection-end-line="100" selection-end-column="90" />
+            <state relative-caret-position="343">
+              <caret line="288" column="65" lean-forward="true" selection-start-line="288" selection-start-column="65" selection-end-line="288" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomersAction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SnapAtSdk/CustomersAction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2354#2361#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#119#170#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/AppBundle/Controller/DefaultController.php">
+      <file leaf-file-name="Routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SnapAtSdk/Routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/AppBundle/Controller/StatusController.php">
+      <file leaf-file-name="SnapAt.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SnapAtSdk/SnapAt.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="341">
+              <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+              <folding>
+                <element signature="e#1466#1497#0#PHP" expanded="false" />
+                <element signature="e#1502#1586#0#PHP" expanded="false" />
+                <element signature="e#1591#1637#0#PHP" expanded="false" />
+                <element signature="e#1642#1753#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="disconnect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/disconnect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding>
+                <element signature="e#6#94#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="88" column="2" lean-forward="true" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreneauxJoueursController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RttApi/src/AppBundle/Controller/Lieux/CreneauxJoueursController.php">
+      <file leaf-file-name="recupererDonnees.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recupererDonnees.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="101" column="22" lean-forward="false" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+            <state relative-caret-position="111">
+              <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Requirements.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Requirements.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+              <folding>
+                <element signature="e#4755#4838#0#PHP" expanded="false" />
+                <element signature="e#4843#4929#0#PHP" expanded="false" />
+                <marker date="1507250075772" expanded="true" signature="41:42" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,9 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/api/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/api/src/AppBundle/Entity/Globals.php" />
         <option value="$PROJECT_DIR$/api/src/AppBundle/Controller/CustomersController.php" />
         <option value="$PROJECT_DIR$/Request.php" />
         <option value="$PROJECT_DIR$/ResponseException.php" />
@@ -207,11 +180,9 @@
         <option value="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/KeySuccessFactors.php" />
         <option value="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Status.php" />
         <option value="$PROJECT_DIR$/conf.php" />
-        <option value="$PROJECT_DIR$/SnapAtSdk/Routes.php" />
         <option value="$PROJECT_DIR$/SnapAtSdk/Actions.php" />
         <option value="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Consultants.php" />
         <option value="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Customers.php" />
-        <option value="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Requirements.php" />
         <option value="$PROJECT_DIR$/api/src/AppBundle/Resources/config/serialization.yml" />
         <option value="$PROJECT_DIR$/api/web/app_dev.php" />
         <option value="$PROJECT_DIR$/api/app/config/routing.yml" />
@@ -219,19 +190,24 @@
         <option value="$PROJECT_DIR$/api/web/config.php" />
         <option value="$PROJECT_DIR$/api/web/app.php" />
         <option value="$PROJECT_DIR$/css.php" />
-        <option value="$PROJECT_DIR$/SnapAtSdk/SnapAt.php" />
-        <option value="$PROJECT_DIR$/SnapAtSdk/Requetes.php" />
         <option value="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Commercials.php" />
         <option value="$PROJECT_DIR$/api/src/AppBundle/Controller/CommercialsController.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/api/src/AppBundle/Entity/Requirements.php" />
         <option value="$PROJECT_DIR$/css/modern-business.css" />
-        <option value="$PROJECT_DIR$/SnapAtSdk/RequirementsAction.php" />
-        <option value="$PROJECT_DIR$/list.php" />
         <option value="$PROJECT_DIR$/delete_requirement.php" />
         <option value="$PROJECT_DIR$/api/src/AppBundle/Controller/RequirementsController.php" />
-        <option value="$PROJECT_DIR$/form.php" />
         <option value="$PROJECT_DIR$/connect.php" />
+        <option value="$PROJECT_DIR$/SnapAtSdk/RequirementsAction.php" />
+        <option value="$PROJECT_DIR$/SnapAtSdk/Requetes.php" />
+        <option value="$PROJECT_DIR$/disconnect.php" />
+        <option value="$PROJECT_DIR$/recupererDonnees.php" />
+        <option value="$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Requirements.php" />
+        <option value="$PROJECT_DIR$/SnapAtSdk/CustomersAction.php" />
+        <option value="$PROJECT_DIR$/SnapAtSdk/Routes.php" />
+        <option value="$PROJECT_DIR$/SnapAtSdk/SnapAt.php" />
+        <option value="$PROJECT_DIR$/list.php" />
+        <option value="$PROJECT_DIR$/form.php" />
       </list>
     </option>
   </component>
@@ -243,10 +219,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-20" />
-    <option name="y" value="6" />
-    <option name="width" value="1924" />
-    <option name="height" value="1049" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -264,6 +240,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,147 +263,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SnapAtSdk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workshopB3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -534,20 +376,21 @@
       <updated>1507036820647</updated>
       <workItem from="1507036821913" duration="6302000" />
       <workItem from="1507126079153" duration="23958000" />
-      <workItem from="1507205327549" duration="10477000" />
+      <workItem from="1507205327549" duration="23113000" />
+      <workItem from="1507243219524" duration="11824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40737000" />
+    <option name="totallyTimeSpent" value="65197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-20" y="6" width="1924" height="1049" extended-state="1" />
+    <frame x="-4" y="-4" width="1928" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17707212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17561762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -577,19 +420,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Globals.php" />
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/UserKey.php" />
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Files.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding>
-            <element signature="e#838#921#0#PHP" expanded="false" />
-            <element signature="e#926#1012#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/KeySuccessFactors.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -618,14 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/Routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -681,18 +503,6 @@
           <folding>
             <element signature="e#872#955#0#PHP" expanded="false" />
             <element signature="e#960#1046#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Requirements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="324" selection-end-column="5" />
-          <folding>
-            <element signature="e#3078#3161#0#PHP" expanded="false" />
-            <element signature="e#3166#3252#0#PHP" expanded="false" />
-            <marker date="1507158641551" expanded="true" signature="41:42" ph="..." />
           </folding>
         </state>
       </provider>
@@ -795,20 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/SnapAt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding>
-            <element signature="e#118#147#0#PHP" expanded="true" />
-            <element signature="e#1331#1362#0#PHP" expanded="false" />
-            <element signature="e#1367#1451#0#PHP" expanded="false" />
-            <element signature="e#1456#1502#0#PHP" expanded="false" />
-            <element signature="e#1507#1618#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SnapAtSdk/ConnectionAction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -821,14 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/Requetes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -856,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="4848" column="0" lean-forward="false" selection-start-line="4848" selection-start-column="0" selection-end-line="4914" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-140810">
           <caret line="1447" column="28" lean-forward="true" selection-start-line="1447" selection-start-column="28" selection-end-line="1447" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,14 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505474821743" expanded="true" signature="1312:1506" ph="UPDATE plage... " />
-            <marker date="1505474821743" expanded="true" signature="2220:2402" ph="INSERT INTO plage_horaire... " />
-            <marker date="1505474821743" expanded="true" signature="2955:2995" ph="DELETE FROM " />
-            <marker date="1505474821743" expanded="true" signature="3207:3326" ph="SELECT * FRO... terrain" />
-            <marker date="1505474821743" expanded="true" signature="6634:6825" ph="INSERT INTO reservation... " />
-            <marker date="1505474821743" expanded="true" signature="7305:7426" ph="SELECT * FRO... reservation" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -919,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1498">
           <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="101" column="22" lean-forward="false" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,14 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SnapAtSdk/RequirementsAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -963,20 +728,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/AppBundle/Controller/RequirementsController.php">
+    <entry file="file://$PROJECT_DIR$/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="140" column="19" lean-forward="true" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
-          <folding>
-            <element signature="e#40#73#0#PHP" expanded="true" />
-            <element signature="e#1202#5327#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/delete_requirement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="210">
           <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
@@ -984,51 +746,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form.php">
+    <entry file="file://$PROJECT_DIR$/SnapAtSdk/Requetes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="100" column="90" lean-forward="false" selection-start-line="100" selection-start-column="90" selection-end-line="100" selection-end-column="90" />
+        <state relative-caret-position="253">
+          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/AppBundle/Controller/RequirementsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="140" column="19" lean-forward="false" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
           <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2354#2361#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#40#73#0#PHP" expanded="true" />
+            <element signature="e#1202#5327#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list.php">
+    <entry file="file://$PROJECT_DIR$/disconnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="167" column="38" lean-forward="false" selection-start-line="167" selection-start-column="38" selection-end-line="167" selection-end-column="38" />
+        <state relative-caret-position="231">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1507213956051" expanded="true" signature="1959:1984" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="1985:3330" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="2013:3323" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="2296:2368" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="2437:3312" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="2481:3297" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="2519:2690" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="2931:3081" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="3361:5365" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="3378:3412" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="4244:5358" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="4437:5315" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="4481:5292" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="5405:5561" ph="..." />
-            <marker date="1507213956051" expanded="true" signature="5433:5526" ph="..." />
+            <element signature="e#6#94#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1037,20 +779,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="88" column="2" lean-forward="true" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recupererDonnees.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SnapAtSdk/ClassesMetiers/Requirements.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2354#2361#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4755#4838#0#PHP" expanded="false" />
+            <element signature="e#4843#4929#0#PHP" expanded="false" />
+            <marker date="1507250075772" expanded="true" signature="41:42" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connect.php">
+    <entry file="file://$PROJECT_DIR$/SnapAtSdk/Routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="252">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SnapAtSdk/SnapAt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="e#1466#1497#0#PHP" expanded="false" />
+            <element signature="e#1502#1586#0#PHP" expanded="false" />
+            <element signature="e#1591#1637#0#PHP" expanded="false" />
+            <element signature="e#1642#1753#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SnapAtSdk/CustomersAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#119#170#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SnapAtSdk/RequirementsAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#119#170#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="288" column="65" lean-forward="true" selection-start-line="288" selection-start-column="65" selection-end-line="288" selection-end-column="65" />
           <folding />
         </state>
       </provider>

@@ -16,10 +16,31 @@ include "conf.php";
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
+        body {
+            background: #F5F5F5;
+        }
+        .sep-form {
+            margin: 10px 0;
+            border-color: lightslategrey;
+        }
+        .add-btn {
+            width: 100%;
+            margin: 5px auto;
+        }
         h1 {
+            font-size: 25px;
             color: #ef9445;
         }
         h4{
@@ -46,13 +67,16 @@ include "conf.php";
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html"><h5>About</h5></a>
+                    <a class="nav-link" href="list.php"><h5><span class="glyphicon glyphicon-list"></span> See the Requirements Sheets</h5></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="form.php"><h5><span class="glyphicon glyphicon-plus-sign"></span> Add Requirement sheet</h5></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html"><h5>Services</h5></a>
+                    <a class="nav-link" href="contact.html"><h5><span class="glyphicon glyphicon-edit"></span> Contact</h5></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html"><h5>Contact</h5></a>
+                    <a class="nav-link" href="disconnect.php"><h5><span class="glyphicon glyphicon-ban-circle"></span> Disconnect</h5></a>
                 </li>
 
             </ul>
@@ -87,93 +111,60 @@ if (isset($_GET["error"]) && !empty($_GET["error"])) {
     <?php
 }
 ?>
-<div class="container-fluid">
+<div class="container">
     <h1 style="margin: 40px 0; text-align:center;">Add Requirement Sheet</h1>
 
-    <form method="post" action="liste.php" enctype="multipart/form-data">
-        <input type='date' name='date' class="form-control" placeholder="Date"/>
-        <input type='text' name='client' class="form-control" placeholder="Client"/>
-        <input type='text' name='contactName' class="form-control" placeholder="Contact Name"/>
+    <form method="post" action="recupererDonnees.php" enctype="multipart/form-data">
         <input type='text' name='title' class="form-control" placeholder="Title"/>
-        <input type='text' name='description' class="form-control" placeholder="Full Description"/>
-        <input type='date' name='startAtLatest' class="form-control" placeholder="Start at the latest"/>
+        <input type='date' name='date' class="form-control" placeholder="Start at least"/>
+        <input type='text' name='client' id="client-input" class="form-control" placeholder="Client"/>
+        <input type='text' name='contactName' class="form-control" placeholder="Contact Name"/>
+        <textarea name='description' class="form-control" placeholder="Full Description"></textarea>
         <input type='text' name='location' class="form-control" placeholder="Location"/>
-        <input type='text' name='rate' class="form-control" placeholder="Rate (€)"/><br />
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="1st main key success factor">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" onclick="createElem('#successFactor2')" type="button">+</button>
-                </span>
-            </div>
+        <input type='text' name='rate' class="form-control" placeholder="Rate (€)"/>
 
-        <div id="successFactor2" style="display:none;">
-            <!--<input type='text' name='successFactor2' placeholder="2nd main key success factor" class="form-control" style="display: inline-block; width: 79%;">
-            <button type = "button" class="btn btn-success" onclick="createElem('#successFactor3')"> + </button>-->
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="2nd main key success factor">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" onclick="createElem('#successFactor3')" type="button">+</button>
-                </span>
-            </div>
-            <button type = "button" class="btn btn-danger" onclick="deleteSuccessFactor('#successFactor2')"> - </button> <br>
+
+        <hr class="sep-form">
+
+
+        <div id="facs">
+            <input type="text" id="successFactor1" name="successFactor1" class="form-control" placeholder="Main key success factor">
         </div>
 
-        <div id="successFactor3" style="display:none;">
-            <input id="test" type='text' name='successFactor3' placeholder="3rd main key success factor" class="form-control"/>
-            <button type = "button" class="btn btn-danger" onclick="deleteSuccessFactor('#successFactor3')"> - </button> <br>
-        </div>
-        <br>
-        <input type='number' name='nbOfMonth' class="form-control" placeholder="Duration in month (1, 2, 3 ...)"/>
-        <label style="width: 40%; display: inline-block; margin-left: 2px;"> Days/Week :</label>
-        <div style=" display: inline-block; text-align: right;width: 58%;">
-            <select style="display: inline-block;" id="select" class="form-control" name="daysPerWeek">
-                <optgroup label="Nb. of days :">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                </optgroup>
-            </select>
-        </div>
-        <br>
-        <br />
-        Descritpion file : <br>
-        <input type='file' name='descriptionFile' placeholder="Description file"/> <br />
-        <div id = "consultant1">
-            <textarea name="consultant1" rows="2" cols="22" placeholder="1st consultant" class="form-control"></textarea>
-            <button type = "button" class="btn btn-success" onclick="createElem('#consultant2')"> + </button> <br>
-        </div>
-        <div id = "consultant2" style="display:none;">
-            <textarea name="consultant2" rows="2" cols="22" placeholder="2nd consultant" class="form-control"></textarea>
-            <button type = "button" class="btn btn-success" onclick="createElem('#consultant3')"> + </button>
-            <button type = "button" class="btn btn-danger" onclick="deleteConsultant('#consultant2')"> - </button> <br>
-        </div>
-        <div id = "consultant3" style="display:none;">
-            <textarea name="consultant3" rows="2" cols="22" placeholder="3rd consultant" class="form-control"></textarea>
-            <button type = "button" class="btn btn-success" onclick="createElem('#consultant4')"> + </button>
-            <button type = "button" class="btn btn-danger" onclick="deleteConsultant('#consultant3')"> - </button> <br>
-        </div>
-        <div id = "consultant4" style="display:none;">
-            <textarea name="consultant4" rows="2" cols="22" placeholder="4th consultant" class="form-control"></textarea>
-            <button type = "button" class="btn btn-success" onclick="createElem('#consultant5')"> + </button>
-            <button type = "button" class="btn btn-danger" onclick="deleteConsultant('#consultant4')"> - </button> <br>
+        <div class="add-btn" id="add-fac">
+            <button class="btn btn-default btn-grand" onclick="createElemFactors()" type="button">
+                <span class="glyphicon glyphicon-plus-sign"></span> Add
+            </button>
+        </div><br />
 
+        <!-- CONSULTANTS -->
+        <div id = "consultants">
+            <textarea name="consultant1" rows="2" cols="22" placeholder="Name of the consultant" class="form-control"></textarea>
         </div>
-        <div id = "consultant5" style="display:none;">
-            <textarea name="consultant5" rows="2" cols="22" placeholder="5th consultant" class="form-control"></textarea>
-            <button type = "button" class="btn btn-danger" onclick="deleteConsultant('#consultant5')"> - </button> <br>
+
+        <div class="add-btn" id="add-cons">
+            <button class="btn btn-default btn-grand" onclick="createElemConsultant();" type="button">
+                <span class="glyphicon glyphicon-plus-sign"></span> Add
+            </button>
         </div>
+
+
+        <hr class="sep-form">
+
+
+        <input style="width: 49%; display: inline-block;" type='number' name='nbOfMonth' class="form-control" placeholder="Duration in month (1, 2, 3 ...)"/>
+        <input class="form-control"  style="width: 49%; display: inline-block;" type="number" name="dayByWeek" placeholder="Day/Week (1,2,3..)"><br />
+
         <br>
-        Status : <br>
+
         <select id="select" class="form-control" name="status">
             <option value="1">Open</option>
             <option value="2">Win</option>
             <option value="3">Lost</option>
         </select><br />
         <input type='text' name='saveAndShare' class="form-control" placeholder="Save & share"/> <br>
+        Descritpion file : <br>
+        <input type='file' name='descriptionFile' placeholder="Description file"/> <br /><br/>
         <button type='submit' class="btn btn-success btn-grand" name='envoyer'>Envoyer</button>
     </form>
 
@@ -187,10 +178,13 @@ if (isset($_GET["error"]) && !empty($_GET["error"])) {
     <!-- /.container -->
 </footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<?php
+$tabNamesClients = array();
+$Customers = $apiHandler->CustomersAction->GetAll();
+foreach ($Customers as $aCustomer){
+    $tabNamesClients[] = $aCustomer->getCompanyName();
+}
+?>
 
 </body>
 
@@ -209,6 +203,113 @@ if (isset($_GET["error"]) && !empty($_GET["error"])) {
 		$(whichOne).css("display", "none");
 		$(whichOne + " textarea").val("");
 	}
+
+
+    function supprElemFactors(){
+        $(".rmFac").click(function () {
+            nbFac = $(".fac").length + 1;
+            console.log(nbFac);
+            var id = $(this).attr("id").split("rmf")[1];
+            var parent = $(this).parent();
+            parent.remove();
+            var i = 1;
+            $(".rmFac").each(function () {
+                i++;
+                $(this).attr("id", "rmf" + i);
+            });
+            var j = 1;
+            $(".input-fac").each(function () {
+                j++;
+                $(this).attr("id", "successFactor" + j).attr("name", "successFactor" + j);
+            });
+            var k =1;
+            $(".fac").each(function () {
+                k++;
+                $(this).attr("id", "div-fac-" + k);
+            });
+        });
+    }
+
+    var maxFac = 3;
+    var nbFac = 0;
+    function createElemFactors() {
+        nbFac = $(".fac").length + 1;
+        if (nbFac < maxFac){
+            nbFac++;
+            var html = '<div id="div-fac-' + nbFac + '" class="input-group fac">';
+            html += '<input id="successFactor' + nbFac + '" name="successFactor' + nbFac + '" placeholder="Main key success factor" class="form-control input-fac" />';
+            html += '<span id="rmf' + nbFac + '" class="input-group-btn rmFac">';
+            html += '<button type="button" class="btn btn-danger"> - </button>';
+            html += '</span>';
+            html += '</div>';
+            $("#facs").append(html);
+            supprElemFactors();
+            /*if (nbFac == maxFac){
+                $("#add-fac").hide();
+            }*/
+        }
+    }
+
+
+
+
+	function supprElemConsultant(){
+        $(".rmCons").click(function () {
+            nbConsultants = $(".cons").length + 1;
+            /*if (nbConsultants < maxConsultants){
+                $("#add-cons").show();
+            }*/
+            var id = $(this).attr("id").split("rmc")[1];
+            var parent = $(this).parent();
+            parent.remove();
+            var i = 1;
+            $(".rmCons").each(function () {
+                i++;
+                $(this).attr("id", "rmc" + i);
+            });
+            j = 1;
+            $(".input-cons").each(function () {
+                j++;
+                $(this).attr("id", "consultant" + j).attr("name", "consultant" + j);
+            });
+            var k =1;
+            $(".cons").each(function () {
+                k++;
+                $(this).attr("id", "div-cons-" + k);
+            });
+        });
+    }
+
+	var maxConsultants = 5;
+	var nbConsultants = 0;
+    function createElemConsultant() {
+        nbConsultants = $(".cons").length + 1;
+	    if (nbConsultants < maxConsultants){
+	        nbConsultants++;
+            var html = '<div id="div-cons-' + nbConsultants + '" class="input-group cons">';
+            html += '<textarea id="consultant' + nbConsultants + '" name="consultant' + nbConsultants + '" rows="1" maxlength="500" cols="22" placeholder="Name of the consultant" class="form-control input-cons"></textarea>';
+            html += '<span id="rmc' + nbConsultants + '" class="input-group-btn rmCons">';
+            html += '<button type="button" class="btn btn-danger"> - </button>';
+            html += '</span>';
+            html += '</div>';
+            $("#consultants").append(html);
+            supprElemConsultant();
+            /*if (nbConsultants == maxConsultants){
+                $("#add-cons").hide();
+            }*/
+        }
+    }
+
+    <?php echo 'var tableau = new Array();';
+    foreach ($tabNamesClients as $name){
+        echo "tableau.push(\"" . $name . "\")";
+    }
+    ?>
+
+    console.log(tableau);
+    $( "#client-input" ).autocomplete({
+        source: tableau
+    });
 
 	function createElem(whichOne) {
 		$(whichOne).css("display", "block");

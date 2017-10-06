@@ -40,7 +40,7 @@ class Requetes
         $result = curl_exec($curl);
 
         $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
+        //echo $result;
         $array_user_json = json_decode($result);
         if (FALSE === $result  || ($httpCode != 201 && $httpCode != 200) || isset($array_user_json->message)){
             if (isset($array_user_json->error))

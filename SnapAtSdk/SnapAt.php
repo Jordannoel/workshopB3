@@ -17,6 +17,7 @@ class SnapAt extends Requetes
     public $ConnectionAction;
     public $StatusAction;
     public $RequirementsAction;
+    public $CustomersAction;
 
     private $modeProduction;
 
@@ -41,6 +42,7 @@ class SnapAt extends Requetes
         $this->ConnectionAction = new ConnectionAction($url . Routes::URL_CONNEXION, $api_key, $mode_prod);
         $this->StatusAction = new StatusAction($url . Routes::URL_STATUS, $api_key, $mode_prod);
         $this->RequirementsAction = new RequirementsAction($url . Routes::URL_REQUIREMENTS, $api_key, $mode_prod);
+        $this->CustomersAction = new CustomersAction($url . Routes::URL_CUSTOMERS, $api_key, $mode_prod);
     }
 
     /**

@@ -15,5 +15,6 @@ class Routes
     const URL_CONNEXION = "/connection";
     const URL_STATUS = "/status";
     const URL_REQUIREMENTS = "/requirements";
+    const URL_CUSTOMERS = "/customers";
 
 }

@@ -36,14 +36,12 @@ $requirements = $apiHandler->RequirementsAction->GetAll(); ?>
         .one-title {
             font-size: 20px;
         }
-        #requirements {
-            width: 90%;
-            margin: auto;
-        }
+
         .one-require {
 
         }
         h1 {
+            font-size: 25px;
             color: #ef9445;
         }
         h4{
@@ -81,7 +79,7 @@ function labelizeStatus($status){
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html"><h5><span class="glyphicon glyphicon-list"></span> See the Requirements Sheets</h5></a>
+                    <a class="nav-link" href="list.php"><h5><span class="glyphicon glyphicon-list"></span> See the Requirements Sheets</h5></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="form.php"><h5><span class="glyphicon glyphicon-plus-sign"></span> Add Requirement sheet</h5></a>
@@ -98,7 +96,7 @@ function labelizeStatus($status){
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container">
     <h1 style="margin: 40px 0; text-align:center;">Requirements Sheets list</h1>
 
     <button class="btn btn-success btn-grand">

@@ -13,7 +13,46 @@ class Requirements implements ClasseMetierInterface
 
     public function serializeProperties()
     {
-        // TODO: Implement serializeProperties() method.
+        $ksf2 = null;
+        $ksf3 = null;
+        $cns2 = null;
+        $cns3 = null;
+        $cns4 = null;
+        $cns5 = null;
+        if (isset($this->keySuccessFactorsList[2]))
+            $ksf2 = $this->keySuccessFactorsList[2]->getText();
+        if (isset($this->keySuccessFactorsList[3]))
+            $ksf3 = $this->keySuccessFactorsList[2]->getText();
+        if (isset($this->consultantsList[2]))
+            $cns2 = $this->consultantsList[2]->getName();
+        if (isset($this->consultantsList[3]))
+            $cns3 = $this->consultantsList[3]->getName();
+        if (isset($this->consultantsList[4]))
+            $cns4 = $this->consultantsList[4]->getName();
+        if (isset($this->consultantsList[5]))
+            $cns5 = $this->consultantsList[5]->getName();
+        return [
+            "keySuccessFactor1" => $this->keySuccessFactorsList[1]->getText(),
+            "keySuccessFactor2" => $ksf2,
+            "keySuccessFactor3" => $ksf3,
+            "consultant1" => $this->consultantsList[1]->getName(),
+            "consultant2" => $cns2,
+            "consultant3" => $cns3,
+            "consultant4" => $cns4,
+            "consultant5" => $cns5,
+            "status" => $this->status->getId(),
+            "commercial" => $this->commercial->getId(),
+            "customer" => $this->customer->getId(),
+            "shareTo" => $this->shareTo,
+            "startDate" => $this->startDate,
+            "title" => $this->title,
+            "fullDescription" => $this->fullDescription,
+            "contactName" => $this->contactName,
+            "nbOfMonth" => $this->nbOfMonth,
+            "dayByWeek" => $this->dayByWeek,
+            "location" => $this->location,
+            "rate" => $this->rate
+        ];
     }
 
     public function iterateProperties()
